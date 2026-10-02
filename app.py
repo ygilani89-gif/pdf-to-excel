@@ -17,7 +17,6 @@ if uploaded:
             line = line.strip()
             if not line:
                 continue
-            # جدا کردن عدد از متن
             match = re.match(r"^(.*?)[\s:]*([\d,،]+)\s*$", line)
             if match:
                 desc = match.group(1).strip()
